@@ -51,6 +51,11 @@ const questions = [
         name: 'linkedin',
         message: 'Enter your LinkedIn URL.',
       },
+      {
+      type: 'input',
+      name: 'contact',
+      message: 'How do you wish to be contacted?',
+    },
   
 ];
 

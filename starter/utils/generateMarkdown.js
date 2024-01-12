@@ -1,6 +1,29 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+  ## Description 
+  ${data.decription}
+  ## Table of Contents 
+  - [Instalation](#Installation)
+  - [Usage](#Usage)
+  - [License](#License)
+  - [Contributing](#Contributing)
+  - [Tests](#Tests)
+  - [Questions](#Questions)
+  ## Installation 
+  ${data.install}
+  ## Usage 
+  ${data.usage}
+  ## License 
+  ${data.licence}
+  ## Contributing 
+  ${data.contribution}
+  ## Tests
+  ${data.tests} 
+  ## Questions
+  Github: ${data.github}
+  Email: ${data.email}
+  ${data.contact}
 
 `;
 }
@@ -36,8 +59,7 @@ function generateMarkdown(data) {
           badge="[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)";
           break;
   }
-
-return
+return badge
  }
 
 module.exports = generateMarkdown;
