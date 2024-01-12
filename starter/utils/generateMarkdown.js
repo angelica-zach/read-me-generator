@@ -1,33 +1,5 @@
-// function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
-  ## Description 
-  ${data.decription}
-  ## Table of Contents 
-  - [Instalation](#Installation)
-  - [Usage](#Usage)
-  - [License](#License)
-  - [Contributing](#Contributing)
-  - [Tests](#Tests)
-  - [Questions](#Questions)
-  ## Installation 
-  ${data.install}
-  ## Usage 
-  ${data.usage}
-  ## License 
-  ${data.licence}
-  ## Contributing 
-  ${data.contribution}
-  ## Tests
-  ${data.tests} 
-  ## Questions
-  Github: ${data.github}
-  Email: ${data.email}
-  ${data.contact}
-
-`;
-}
- function generateBadge(data){
+//making badge with switch statements
+function generateBadge(data){
   let badge="";
   let licence=data.licence;
   switch( licence) {
@@ -59,7 +31,39 @@ function generateMarkdown(data) {
           badge="[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)";
           break;
   }
-return badge
+return badge;
  }
+
+// function to generate markdown for README
+function generateMarkdown(data) {
+  const badgeNorm = generateBadge(data);
+  return `# ${data.title}
+  ${badgeNorm}
+  ## Description 
+  ${data.decription}
+  ## Table of Contents 
+  - [Instalation](#Installation)
+  - [Usage](#Usage)
+  - [License](#License)
+  - [Contributing](#Contributing)
+  - [Tests](#Tests)
+  - [Questions](#Questions)
+  ## Installation 
+  ${data.install}
+  ## Usage 
+  ${data.usage}
+  ## License 
+  ${data.licence}
+  ## Contributing 
+  ${data.contribution}
+  ## Tests
+  ${data.tests} 
+  ## Questions
+  Github: ${data.github}
+  Email: ${data.email}
+  ${data.contact}
+
+`;
+}
 
 module.exports = generateMarkdown;
