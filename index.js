@@ -37,7 +37,7 @@ const questions = [
       },
       {
         type: 'list',
-        name: 'liscence',
+        name: 'licence',
         message: 'Pick a liscence',
       },
      
