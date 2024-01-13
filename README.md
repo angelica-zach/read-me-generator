@@ -1,4 +1,4 @@
-#Read Me Generator
+# Read Me Generator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -9,7 +9,7 @@ In this project, I used Node.js to make a readMe generator . This is done using 
 ## Examples 
 [readMe.md](https://github.com/angelica-zach/read-me-generator/files/13928985/readMe.md)# Read Me
 
-
+(https://github.com/angelica-zach/read-me-generator/blob/main/starter/readMe.md)
 https://github.com/angelica-zach/read-me-generator/assets/147160016/5aa9df57-669b-4218-ae2e-01a39cfa1288
 
 
