@@ -40,7 +40,7 @@ function generateMarkdown(data) {
   return `# ${data.title}
   ${badgeNorm}
   ## Description 
-  ${data.decription}
+  ${data.description}
   ## Table of Contents 
   - [Instalation](#Installation)
   - [Usage](#Usage)
