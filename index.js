@@ -59,12 +59,16 @@ const questions = [
       name: 'contact',
       message: 'How do you wish to be contacted?',
     },
+    {type: 'input',
+    name: 'path',
+    message: 'Enter readMe path[leave blank for root]',
+  },
   
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
-    const filePath = path.join(__dirname,  fileName);
+function writeToFile(fileName,outputDir ,data) {
+    const filePath = path.join(__dirname,outputDir, fileName);
     return writeToFileAsync(filePath, data)
     .then(() => {
       console.log(`Markdown content successfully written to ${filePath}`);
@@ -78,7 +82,7 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
   inquirer.prompt(questions)
-    .then((data) => writeToFile('readMe.md', generateMarkdown(data)))
+    .then((data) => writeToFile('readMe.md',data.path ,generateMarkdown(data)))
     .then(() => {
       console.log('Successfully wrote markdown file');
     })
