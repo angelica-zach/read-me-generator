@@ -1,7 +1,7 @@
-# a
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# mood app
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Description 
-  b
+  mood app lets users pick a mood card and then return playlists, if an artist is clicked it shows tour dates
   ## Table of Contents 
   - [Instalation](#Installation)
   - [Usage](#Usage)
@@ -10,17 +10,16 @@
   - [Tests](#Tests)
   - [Questions](#Questions)
   ## Installation 
-  c
+  press the green code button , copy the SHH and do a git clone
   ## Usage 
-  d
+  matching mood to artists and concerts
   ## License 
-  Apache
+  MIT
   ## Contributing 
-  e
+  free use :) ideally use different API keys
   ## Tests
-  f 
+  click any mood card / generate own adn see how APIs response  
   ## Questions
   Github: https://github.com/angelica-zach
-  Email: a
-  f
-
+  Email: angelscakeunicorn@gmail.com
+  github
