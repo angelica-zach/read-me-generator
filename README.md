@@ -6,6 +6,10 @@
 
 In this project, I used Node.js to make a readMe generator . This is done using asyncs and several node.js utilities such as Inquirer, Util ,Path and FS . Path is implemented so users can create a custom path for thier file.
 
+## Examples 
+These can be found in the examples folder
+[readMe.md](https://github.com/angelica-zach/read-me-generator/examples/readMe.md)
+
 ## Table of Contents
 
 - [Instalation](#Installation)
