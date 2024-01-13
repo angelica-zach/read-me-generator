@@ -3,6 +3,7 @@ const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./starter/utils/generateMarkdown");
 
+
 // array of questions for user
 const questions = [
     {
@@ -62,11 +63,20 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-}
+    const filePath = path.join(__dirname,  fileName);
+    return fs.writeFile(filePath, data)
+    .then(() => console.log(`Markdown content successfully written to ${fillPath}`))
+    .catch(err => console.error(err));
+      };
 
 // function to initialize program
 function init() {
-
+  inquirer.prompt(questions)
+  .then((data) => { writeToFile('readMe', generateMarkdown(data))
+  .then(() => console.log('Successfully wrote markdown file'))
+  .catch((err) => console.error(err));
+    })
+   
 }
 
 // function call to initialize program
