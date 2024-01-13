@@ -51,8 +51,8 @@ const questions = [
       },
       {
         type: 'input',
-        name: 'linkedin',
-        message: 'Enter your LinkedIn URL.',
+        name: 'email',
+        message: 'Enter your email',
       },
       {
       type: 'input',
